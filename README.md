@@ -34,6 +34,28 @@ docker-compose.yml     (Compose file to run services)
 
 ```
 
+### Docker file content
+
+```Dockerfile
+FROM node:latest
+```
+
+### Docker compose file content
+
+```yml
+version: "3.9"
+services:
+  devenv:
+    build: ./dev
+    ports:
+      - "3000:3000"
+      
+    volumes: 
+      - .:/workspace
+
+    command: /bin/sh -c "cd /workspace/app; yarn dev"
+```
+
 ## Open project in WSL2 container using your favorite Linux distro (say Ubuntu)
 
 Open WSL2 filesystem. In case you are unfamilear with WSL2 filesystem, pleae go through below article and come back later to thi step.
