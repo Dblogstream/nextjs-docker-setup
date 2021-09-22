@@ -96,7 +96,6 @@ Run below command and follow on screen instructions.
 
 ```sh
 yarn create next-app 
-
 ```
 
 If you want TypeScript support.
@@ -107,7 +106,7 @@ yarn create next-app --typescript
 
 ## Start development server
 
-Close all the process pressing (Crtl key + C). And use Docker compose to have development enviroment. Enjoy development. You will not face any issue developing Next projects.
+Close all the process pressing (Crtl key + C or type 'exit'). And use Docker compose to have development enviroment. Enjoy development. You will not face any issue developing Next projects.
 
 ```sh
 docker-compose up
